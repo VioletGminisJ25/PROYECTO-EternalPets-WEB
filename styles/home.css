@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    background-image: url("../src/img/background/background.webp");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100%;  
+}
+
+body{
+    background-color: whitesmoke;
+    width: 70%;  
+    height: 100%; 
+    overflow: hidden;
+}
+
+header{
+    background: #8f5d467a;
+    height:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 90%;
+        width: auto;
+    }
+}
+
+nav{
+    height: 6%;
+    width: 100%;
+    display: flex;
+    ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-top: 2px solid #8f5d467a;
+        border-bottom: 2px solid #8f5d467a;
+        list-style: none;
+        li{
+            width: 10em ;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 20px;
+            padding : 10px 0px;
+            font-size: large;
+            transition: color 0.3s ease-in-out, background 0.2s ease-in-out;
+            &:hover{
+                background-color: #AC947D;
+            }
+            &:hover a{
+                color: white;
+            }
+            a{
+                text-decoration: none;
+                color: black ;
+            }
+        }
+    }   
+} 
+
+main{
+    height: 62%;
+    width: 100%;
+    display: flex;
+    img{
+        height: 300px;
+    }
+}
+
+footer{
+    background: #8f5d467a;
+    height:7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input{
+        height: 40px;
+        width: 40px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border-style: none;
+        &:hover{
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+    }
+}
+
+.insta{
+    height: 50px;
+    width: 50px;
+    background-image: url(../src/img/redes/instaBla.png);
+}
+.insta:hover{
+    background-image: url(../src/img/redes//instaCol.png);
+}
+.twitter{
+    background-image: url(../src/img/redes/twiterBl.png);
+}
+.twitter:hover{
+    background-image: url(../src/img/redes/twitterCol.png);
+}
+.facebook{
+    background-image: url(../src/img/redes/faceBl.png);
+}
+.facebook:hover{
+    background-image: url(../src/img/redes/faceCol.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+nav{
+    background-color: lightblue;
+}
+ */
+
