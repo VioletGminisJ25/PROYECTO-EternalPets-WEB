@@ -52,7 +52,7 @@ main {
     }
 }
 
-@media (min-width: 601px) and (max-width: 1250px) {
+@media (min-width: 601px) and (max-width: 1366px) {
     .texto {
         width: 50%;
         p{
@@ -72,6 +72,9 @@ main {
         .parrafo {
             flex-direction: column-reverse;
             text-align: center;
+            p{
+                font-size: medium;
+            }
         }
         .texto {
             width: 100%;

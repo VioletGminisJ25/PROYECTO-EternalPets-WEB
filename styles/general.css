@@ -1,8 +1,16 @@
+@font-face{
+    font-family: "Mornserrat-Regular";
+    src: url("../src/fonts/Montserrat-Regular.ttf");
+}
+@font-face{
+    font-family: "Poppins-Regular";
+    src: url("../src/fonts/Poppins-Regular.ttf");
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins-Regular";
 }
 
 html{
