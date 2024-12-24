@@ -1,14 +1,26 @@
-*{
+@font-face {
+	font-family: "Montserrat-Regular";
+	src: url("../src/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Poppins-Regular";
+	src: url("../src/fonts/Poppins-Regular.ttf");
+}
+
+* {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
 	width: 100%;
 	height: 100%;
 }
-body{
+
+body {
 	background-image: url("../src/img/background/background.webp");
 	background-position: center;
 	background-size: cover;
@@ -16,13 +28,15 @@ body{
 	justify-content: center;
 	align-items: center;
 	gap: 10dvw;
-	img{
+
+	img {
 		width: 40dvw;
 		height: auto;
 		transform: translateX(20%);
 		animation: transleteToLeft 1.5s ease-in-out 1s forwards;
 	}
-	ul{
+
+	ul {
 		width: 0;
 		list-style: none;
 		gap: 2dvw;
@@ -31,52 +45,76 @@ body{
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		animation: fadeIn 1.5s ease-in-out 2s forwards;  
-		li{
-			width: 10em ;
+		animation: fadeIn 1.5s ease-in-out 2s forwards;
+
+		a {
+			text-decoration: none;
+			color: black;
+			transition: color 0.3s ease-in-out, background 0.2s ease-in-out;
+			width: 10em;
 			text-align: center;
 			cursor: pointer;
 			border-radius: 20px;
-			padding : 10px 0px;
-			font-family: 'Poppins', sans-serif;
-			font-size:2.2rem;
-			transition: color 0.3s ease-in-out, background 0.2s ease-in-out;
-			&:hover{
+			padding: 10px 0px;
+			font-family: "Poppins-Regular";
+			font-size: 2.2rem;
+			&:hover {
 				background-color: #AC947D;
 			}
-			&:hover a{
+
+			&:hover li {
 				color: white;
-			}
-			a{
-				text-decoration: none;
-				color: black ;
 			}
 		}
 	}
 
 }
+
 @media (max-width: 600px) {
-	body{
+	body {
 		flex-direction: column;
+
+		ul {
+			a {
+				font-size: 1.2rem;
+			}
+		}
+
+		img{
+			scale: 1.2;
+			transform: translateY(40%);
+			animation: moveUp 1.5s ease-in-out 1s forwards;
+		}
 	}
+
 }
 
-@keyframes fadeIn{
-	from{
+@keyframes fadeIn {
+	from {
 		opacity: 0;
 	}
-	to{
+
+	to {
 		opacity: 1;
 	}
 }
+
 @keyframes transleteToLeft {
-	from{
-		transform: translateX(20%);
+	from {
+		transform: translateX(30%);
 	}
-	to{
+
+	to {
 		transform: translateX(-20%);
 	}
 }
-
-
-
+@keyframes moveUp {
+	from {
+		opacity: 0;
+		transform: translateY(40%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(-20%);
+	}
+}
