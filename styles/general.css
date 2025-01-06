@@ -55,7 +55,8 @@ nav{
 		align-items: center;
 		justify-content: center;
 		list-style: none;
-		
+		margin: 0;
+		padding: 0;
 		/* li{
 			width: 10em ;
 			text-align: center;
