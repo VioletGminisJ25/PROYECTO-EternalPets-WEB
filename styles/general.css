@@ -55,7 +55,8 @@ nav{
 		align-items: center;
 		justify-content: center;
 		list-style: none;
-		li{
+		
+		/* li{
 			width: 10em ;
 			text-align: center;
 			cursor: pointer;
@@ -72,7 +73,24 @@ nav{
 			a{
 				text-decoration: none;
 				color: black ;
-			}
+			} */
+			a {
+				text-decoration: none;
+				color: black;
+				transition: color 0.3s ease-in-out, background 0.2s ease-in-out;
+				width: 10em;
+				text-align: center;
+				cursor: pointer;
+				border-radius: 20px;
+				padding: 10px 0px;
+				font-family: "Poppins-Regular";
+				font-size: large;
+				
+				&:hover {
+					background-color: #AC947D;
+					color: white;
+				}
+
 			
 		}
 	}   
