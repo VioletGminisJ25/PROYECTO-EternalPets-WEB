@@ -146,8 +146,8 @@ footer {
 }
 
 .insta {
-	height: 50px;
-	width: 50px;
+	height: 2.5em;
+	width: 2.5em;
 	background-image: url(../src/img/redes/instaBla.png);
 
 	&:hover {
@@ -156,6 +156,8 @@ footer {
 }
 
 .twitter {
+	height: 2em;
+	width: 2em;
 	background-image: url(../src/img/redes/twiterBl.png);
 
 	&:hover {
@@ -164,6 +166,8 @@ footer {
 }
 
 .facebook {
+	height: 2em;
+	width: 2em;
 	background-image: url(../src/img/redes/faceBl.png);
 
 	&:hover {
