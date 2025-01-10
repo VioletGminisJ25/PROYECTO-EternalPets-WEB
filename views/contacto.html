@@ -1,54 +1,87 @@
+<!-- href="../styles/general.css"-->
+<!--href="../styles/contacto.css"-->
+<!--src="../src/img/contacto_img/fachada.png"-->
+<!--src="../src/img/contacto_img/mail.png"-->
+<!--src="../src/img/contacto_img/tlf.png"-->
+<!--src="../src/img/contacto_img/ubicaciones.png"-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../src/icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../styles/general.css">
-    <link rel="stylesheet" type="text/css" href="../styles/contacto.css">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="contacto.css">
     <title>Eternal Pets</title>
 </head>
 
 <body>
-	<nav>
-		<img src="../src/img/logos/logo.svg" alt="#">
-		<ul>
-			<a href="home.html"><li>Nosotros</li></a>
-			<a href="productos.html"><li>Productos</li></a>
-			<a href="servicios.html"><li>Servicios</li></a>
-			<a href="contacto.html"><li>Contacto</li></a>
-		</ul>
-	</nav>
-	<main>
+    <nav>
+        <img src="../src/img/logos/logo.svg" alt="#">
+        <ul>
+            <a href="home.html">
+                <li>Nosotros</li>
+            </a>
+            <a href="productos.html">
+                <li>Productos</li>
+            </a>
+            <a href="servicios.html">
+                <li>Servicios</li>
+            </a>
+            <a href="contacto.html">
+                <li>Contacto</li>
+            </a>
+        </ul>
+    </nav>
+    <main>
+
         <div class="container">
             <div class="left-column">
-                <img class="fachada" src="../src/img/contacto_img/fachada.png" alt="#">
+                <img class="fachada" src="fachada.png" alt="#">
             </div>
 
             <div class="right-column">
-                <div class="icono">
-                    <img class="tlf" src="../src/img/contacto_img/tlf.png" alt="Teléfono">
-                    <div class="info">
+                <div class="container-inside">
+                    <div class="encabezado">
+                        <img class="tlf" src="tlf.png" alt="Teléfono">
                         <p>Teléfono:</p>
+                    </div>
+                    <div class="info">
                         <p>986412342</p>
                     </div>
                 </div>
 
-                <div class="icono">
-                    <img class="mail" src="../src/img/contacto_img/mail.png" alt="Correo electrónico">
-                    <div class="info">
+                <div class="container-inside">
+                    <div class="encabezado">
+                        <img class="mail" src="mail.png" alt="Correo electrónico">
                         <p>E-mail:</p>
+                    </div>
+                    <div class="info">
                         <p>eternalpet.sl@gmail.com</p>
                     </div>
                 </div>
 
-                <div class="icono">
-                    <img class="ubicacion" src="../src/img/contacto_img/ubicacion.png" alt="Ubicación">
-                    <div class="info">
+                <div class="container-inside">
+                    <div class="encabezado">
+                        <img class="ubicacion1" src="ubicacion.png" alt="Ubicación">
                         <p>Dirección:</p>
+                    </div>
+                    <div class="info">
                         <p>Avenida de Castelao 41</p>
                     </div>
                 </div>
+
+                <div class="container-inside">
+                    <div class="encabezado">
+                        <img class="ubicacion2" src="ubicacion.png" alt="Ubicación">
+                        <p>Dirección:</p>
+                    </div>
+                    <div class="info">
+                        <p>Avenida de Castelao 41</p>
+                    </div>
+                </div>
+
             </div>
-        </div>  
+        </div>
     </main>
     <footer>
         <div id="redes">
