@@ -89,6 +89,7 @@ nav {
 			cursor: pointer;
 			border-radius: 20px;
 			padding: 10px 0px;
+            margin-right: 5px;
 			font-family: "Poppins-Regular";
 			font-size: large;
 
@@ -96,10 +97,13 @@ nav {
 				background-color: #AC947D;
 				color: white;
 			}
-
-
+            
 		}
 	}
+    .selected {
+        background-color: #AC947D;
+        color: white;
+    }
 }
 
 h1 {
@@ -129,7 +133,7 @@ footer {
 	align-self: flex-end;
 	justify-content: center;
 	align-items: center;
-
+    
 	input {
 		height: 40px;
 		width: 40px;
