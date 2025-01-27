@@ -1,6 +1,7 @@
 main {
     flex-direction: column;
 	padding-bottom: 5%;
+	min-height: 83%;/*quitar si se manda el footer abajo*/
 }
 
 .parrafo {
@@ -53,8 +54,19 @@ img {
 		}
 	}
 
+	.wrapper_imagenes {
+		flex-direction: column;
+		align-items: center;
+
+	}
+
 	.imagen {
-		width: 50%;
+		width: 100%;
+		margin-bottom: 3%;
+	}
+
+	img {
+		width: 30dvw;
 	}
 
 	.title {
@@ -72,12 +84,23 @@ img {
 		}
 	}
 
+	.wrapper_imagenes {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.imagen {
+		width: 100%;
+		margin-bottom: 3%;
+	}
+
+	img {
+		width: 30dvw;
+	}
+
 	.texto {
 		width: 100%;
 		padding: 4%;
 	}
 
-	.imagen {
-		width: 100%;
-	}
 }
