@@ -1,5 +1,5 @@
 main {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .container {
@@ -22,28 +22,29 @@ main {
     margin: 5%
 }
 
-.container-inside {
+.icono {
     display: flex;
-    flex-direction: column;
-}
-
-.encabezado {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    margin: 4%;
-    font-size: large;
+    margin: 6%;
 }
 
-.encabezado img {
-    width: 30px;
-    height: 30px;
+.icono img {
+    width: 50px;
+    height: 50px;
 }
 
 .info p {
     margin: 0;
-    padding-left: 25%;
-    font-size: medium;
+    padding-left: 10px;
+    font-size: 18px;   
+}
+
+.titulo{
+font-weight: bold;
+}
+
+.datos{
+    text-indent: 8px;
 }
 
 .fachada {
@@ -53,29 +54,17 @@ main {
 
 @media (min-width: 601px) and (max-width: 1366px) {
  
-    .encabezado img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .info p {
-        font-size: medium;
-    }
-
-    .fachada {
-        width: 100%;
-    }
-
-}
-
-@media (max-width: 600px) {
-
     .container {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse;   
     }
 
     .left-column {
         width: 100%;
+        padding-right: 10%;
+    }
+    .right-column{
+        flex-direction: column;
+        width: 90%;
         padding-right: 10%;
     }
 
@@ -84,31 +73,74 @@ main {
         height: auto;
     }
 
-    .right-column {
+    .info  {
+        font-size: large;
+        text-align: center;
+        padding-top: 2px;
+    }
+
+    .titulo{
+        text-align: center;
+        }
+
+    .datos{
+        text-indent: 0px;
+    }
+
+    .icono {
         flex-direction: column;
         align-items: center;
+    }
+
+    .icono img {
+        width: 60px;
+        height: 60px;
+    }
+   
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        flex-direction: column-reverse;   
+    }
+
+    .left-column {
         width: 100%;
         padding-right: 10%;
     }
-
-    .container-inside {
+    .right-column{
         flex-direction: column;
-        align-items: center;
+        width: 80%;
+       
     }
 
-    .encabezado {
-        flex-direction: column;
-        align-items: center;
+    .fachada {
+        width: 80%;
+        height: auto;
     }
 
-    .encabezado img {
+    .info p {
+        font-size: medium;
+    }
+
+    .titulo{
+        text-align: center;
+        }
+
+    .datos{
+        text-indent: 0px;
+    }
+
+    .icono {
+        flex-direction: column;
+        align-items: center;
+      
+    }
+
+    .icono img {
         width: 50px;
         height: 50px;
-    }
-
-    .info  {
-        align-items: center;
-        font-size: medium;
     }
 
 
