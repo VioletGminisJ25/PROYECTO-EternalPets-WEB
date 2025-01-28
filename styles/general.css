@@ -41,6 +41,10 @@ body {
 	
 } */
 
+main{
+	min-height: 83%;
+}
+
 nav {
 	display: block;
 	position: sticky;
@@ -79,6 +83,7 @@ nav {
 			cursor: pointer;
 			border-radius: 20px;
 			padding: 10px 0px;
+			margin-right: 5px;
 			font-family: "Poppins-Regular";
 			font-size: large;
 
@@ -86,8 +91,10 @@ nav {
 				background-color: #AC947D;
 				color: white;
 			}
-
-
+		}
+		.selected {
+			background-color: #AC947D;
+			color: white;
 		}
 	}
 
@@ -162,9 +169,7 @@ nav {
 						font-size: 1.5rem;
 						margin: 1.5dvh 0; 
 						color: black;
-						cursor: pointer;
-						
-						
+						cursor: pointer;	
 					}
 					
 					a::after{
