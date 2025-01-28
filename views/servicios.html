@@ -3,23 +3,76 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="../src/icons/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="../styles/general.css">
+	<link rel="stylesheet" type="text/css" href="../styles/servicios.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<title>Eternal Pets</title>
 </head>
 
 <body>
-	<header>
-		<img src="../src/img/logos/logo.svg" alt="#">
-	</header>
 	<nav>
-		<ul>
-			<li><a href="home.html">Nosotros</a></li>
-			<li><a href="productos.html">Productos</a></li>
-			<li><a href="servicios.html">Servicios</a></li>
-			<li><a href="contacto.html">Contacto</a></li>
-		</ul>
+		<div id="desktop-nav">
+			<img src="../src/img/logos/logo.svg" alt="#">
+			<ul>
+				<a href="home.html">
+					<li>Nosotros</li>
+				</a>
+				<a href="productos.html">
+					<li>Productos</li>
+				</a>
+				<a class="selected" href="servicios.html">
+					<li>Servicios</li>
+				</a>
+				<a href="contacto.html">
+					<li>Contacto</li>
+				</a>
+			</ul>
+		</div>
+		<div id="mobile-nav">
+			<span href="#" id="menu-icon"><img src="../src/icons/menu.svg" alt="#">MENU</span>
+			<img id="logo" src="../src/img/logos/logo.svg" alt="#">
+			<div id="menunav">
+				<ul id="menu">
+					<a href="home.html">
+						<li>Nosotros</li>
+					</a>
+					<a href="productos.html">
+						<li>Productos</li>
+					</a>
+					<a href="servicios.html">
+						<li>Servicios</li>
+					</a>
+					<a href="contacto.html">
+						<li>Contacto</li>
+					</a>
+				</ul>
+			</div>
+		</div>
 	</nav>
 	<main>
-		<p>servicios</p>
+		<div class="parrafo">
+			<h1 class="title">Les ofrecemos los siguentes servicios:</h1>
+		</div>
+		<div class="parrafo">
+			<div class="texto">
+				<p>En nuestra oficina, le asesoraremos en todo lo que podamos respecto a su pérdida.</p>
+
+				<p>También le ofrecemos la posibilidad de incinerar a su mascota.</p>
+
+				<p>Si lo desea, puede guardar sus restos en uno de nuestros columbarios, cuya ubicación se especifica en la página de contacto</p>
+			</div>
+		</div>
+		<div class="wrapper_imagenes">
+			<div class="imagen">
+				<img src="../src/img/servicios_img/asesoria.jpg" alt="#">
+			</div>
+			<div class="imagen">
+				<img src="../src/img/servicios_img/cremacion.webp" alt="#">
+			</div>
+			<div class="imagen">
+				<img src="../src/img/servicios_img/combulario.jpg" alt="#">
+			</div>
+		</div>
 	</main>
 	<footer>
 		<div id="redes">
@@ -28,4 +81,6 @@
 			<a href="https://www.facebook.com/"><input type="button" class="facebook"></a>
 		</div>
 	</footer>
+	<script type="module" src="../scripts/navbarMobile.js"></script>
+
 </body>

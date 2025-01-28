@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.container-inside {
+    display: flex;
+    height: 33%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    padding: 1em;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+img {
+    width: 45dvw;
+    height: 40dvh;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .column{
+        flex-direction: column;
+    }
+    
+    .reverse{
+        flex-direction: column-reverse;
+    }
+
+    .element{
+       width: 75%;
+    }
+	
+}

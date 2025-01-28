@@ -12,13 +12,27 @@
 <body>
 
 	<nav>
-		<img src="../src/img/logos/logo.svg" alt="#">
-		<ul>
-			<li><a href="home.html">Nosotros</a></li>
-			<li><a href="productos.html">Productos</a></li>
-			<li><a href="servicios.html">Servicios</a></li>
-			<li><a href="contacto.html">Contacto</a></li>
-		</ul>
+		<div id="desktop-nav">
+			<img src="../src/img/logos/logo.svg" alt="#">
+			<ul>
+				<a class="selected" href="home.html"><li>Nosotros</li></a>
+				<a href="productos.html"><li>Productos</li></a>
+				<a href="servicios.html"><li>Servicios</li></a>
+				<a href="contacto.html"><li>Contacto</li></a>
+			</ul>
+		</div>
+		<div id="mobile-nav">
+			<span href="#" id="menu-icon"><img src="../src/icons/menu.svg" alt="#">MENU</span>
+			<img id="logo" src="../src/img/logos/logo.svg" alt="#">
+			<div id="menunav">
+				<ul id="menu" >
+					<a href="home.html"><li>Nosotros</li></a>
+					<a href="productos.html"><li>Productos</li></a>
+					<a href="servicios.html"><li>Servicios</li></a>
+					<a href="contacto.html"><li>Contacto</li></a>
+				</ul>
+			</div>
+		</div>
 	</nav>
 	<main>
 		<div class="parrafo">
@@ -55,12 +69,6 @@
 				<h1 class="title">Gracias por confiar en nosotros para honrar la memoria de tu fiel compañero.</h1>
 			</div>
 		</div>
-
-
-
-
-
-
 	</main>
 	<footer>
 		<div id="redes">
@@ -69,6 +77,8 @@
 			<a href="https://www.facebook.com/"><input type="button" class="facebook"></a>
 		</div>
 	</footer>
+	<script type="module" src="../scripts/navbarMobile.js"></script>
+
 </body>
 
 </html>

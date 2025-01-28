@@ -4,24 +4,54 @@
 	<link rel="icon" href="../src/icons/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="../styles/general.css">
 	<title>Eternal Pets</title>
-
+	<link rel="stylesheet" href="../styles/productos.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
 	<nav>
-		<img src="../src/img/logos/logo.svg" alt="#">
-		<ul>
-			<li><a href="home.html">Nosotros</a></li>
-			<li><a href="productos.html">Productos</a></li>
-			<li><a href="servicios.html">Servicios</a></li>
-			<li><a href="contacto.html">Contacto</a></li>
-		</ul>
+		<div id="desktop-nav">
+			<img src="../src/img/logos/logo.svg" alt="#">
+			<ul>
+				<a href="home.html">
+					<li>Nosotros</li>
+				</a>
+				<a class="selected" href="productos.html">
+					<li>Productos</li>
+				</a>
+				<a href="servicios.html">
+					<li>Servicios</li>
+				</a>
+				<a href="contacto.html">
+					<li>Contacto</li>
+				</a>
+			</ul>
+		</div>
+		<div id="mobile-nav">
+			<span href="#" id="menu-icon"><img src="../src/icons/menu.svg" alt="#">MENU</span>
+			<img id="logo" src="../src/img/logos/logo.svg" alt="#">
+			<div id="menunav">
+				<ul id="menu">
+					<a href="home.html">
+						<li>Nosotros</li>
+					</a>
+					<a href="productos.html">
+						<li>Productos</li>
+					</a>
+					<a href="servicios.html">
+						<li>Servicios</li>
+					</a>
+					<a href="contacto.html">
+						<li>Contacto</li>
+					</a>
+				</ul>
+			</div>
+		</div>
 	</nav>
 	<main>
 		<div class="container">
-			<div class="container-inside">
+			<div class="container-inside reverse">
 				<div class="element">
 
 					<div id="carousel-anillos" class="carousel carousel-dark slide w-100" data-bs-ride="carousel">
@@ -73,7 +103,7 @@
 					</label>
 				</div>
 			</div>
-			<div class="container-inside">
+			<div class="container-inside column">
 				<div class="element">
 					<h2>Collares</h2>
 					<label>
@@ -121,7 +151,7 @@
 				</div>
 			</div>
 
-			<div class="container-inside">
+			<div class="container-inside reverse">
 				<div class="element">
 					<div id="carousel-pulseras" class="carousel carousel-dark slide w-100" data-bs-ride="carousel">
 						<div class="carousel-inner rounded">
@@ -159,7 +189,7 @@
 				</div>
 			</div>
 
-			<div class="container-inside">
+			<div class="container-inside column">
 				<div class="element">
 					<h2>Figuras</h2>
 					<label>
@@ -242,41 +272,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
+	<script type="module" src="../scripts/navbarMobile.js"></script>
 
 </body>
-
-
-<style>
-	.container {
-		display: flex;
-		flex-direction: column;
-		gap: 1em;
-	}
-
-	.container-inside {
-		display: flex;
-		height: 33%;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		gap: 3em;
-		padding: 1em;
-	}
-
-	.element {
-		display: flex;
-		flex-direction: column;
-		width: 50%;
-		height: 100%;
-		gap: 1em;
-		justify-content: center;
-		align-items: center;
-		object-fit: cover;
-	}
-
-	img {
-		width: 45dvw;
-		height: 40dvh;
-		object-fit: cover;
-	}
-</style>

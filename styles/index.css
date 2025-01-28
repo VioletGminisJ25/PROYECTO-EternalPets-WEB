@@ -101,7 +101,7 @@ body {
 
 @keyframes transleteToLeft {
 	from {
-		transform: translateX(30%);
+		transform: translateX(20%);
 	}
 
 	to {
@@ -110,11 +110,9 @@ body {
 }
 @keyframes moveUp {
 	from {
-		opacity: 0;
 		transform: translateY(40%);
 	}
 	to {
-		opacity: 1;
 		transform: translateY(-20%);
 	}
 }
