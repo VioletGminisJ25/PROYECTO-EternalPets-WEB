@@ -8,15 +8,45 @@
 </head>
 
 <body>
-	<nav>
-		<img src="../src/img/logos/logo.svg" alt="#">
-		<ul>
-			<a href="home.html"><li>Nosotros</li></a>
-			<a href="productos.html"><li>Productos</li></a>
-			<a href="servicios.html"><li>Servicios</li></a>
-			<a href="contacto.html"><li>Contacto</li></a>
-		</ul>
-	</nav>
+    <nav>
+        <div id="desktop-nav">
+            <img src="../src/img/logos/logo.svg" alt="#">
+            <ul>
+                <a href="home.html">
+                    <li>Nosotros</li>
+                </a>
+                <a href="productos.html">
+                    <li>Productos</li>
+                </a>
+                <a href="servicios.html">
+                    <li>Servicios</li>
+                </a>
+                <a href="contacto.html">
+                    <li>Contacto</li>
+                </a>
+            </ul>
+        </div>
+        <div id="mobile-nav">
+            <span href="#" id="menu-icon"><img src="../src/icons/menu.svg" alt="#">MENU</span>
+            <img id="logo" src="../src/img/logos/logo.svg" alt="#">
+            <div id="menunav">
+                <ul id="menu">
+                    <a href="home.html">
+                        <li>Nosotros</li>
+                    </a>
+                    <a href="productos.html">
+                        <li>Productos</li>
+                    </a>
+                    <a href="servicios.html">
+                        <li>Servicios</li>
+                    </a>
+                    <a href="contacto.html">
+                        <li>Contacto</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
 	<main>
         <div class="container">
             <div class="left-column">
@@ -57,4 +87,6 @@
             <a href="https://www.facebook.com/"><input type="button" class="facebook"></a>
         </div>
     </footer>
+	<script type="module" src="../scripts/navbarMobile.js"></script>
+
 </body>
