@@ -39,8 +39,9 @@ main {
     font-size: 18px;   
 }
 
-.titulo{
-font-weight: bold;
+.titulo {
+	margin: 3%;
+	color: #8F5D46;
 }
 
 .datos{
@@ -79,10 +80,6 @@ font-weight: bold;
         text-align: center;
         padding-top: 2px;
     }
-
-    .titulo{
-        text-align: center;
-        }
 
     .datos{
         text-indent: 0px;
