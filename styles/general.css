@@ -22,6 +22,7 @@ html {
 	background-size: cover;
 	display: flex;
 	justify-content: center;
+	height: 100%;
 }
 
 body {
@@ -41,9 +42,6 @@ body {
 	
 } */
 
-main{
-	min-height: 83%;
-}
 
 nav {
 	display: block;
@@ -218,6 +216,7 @@ main {
 	width: 100%;
 	display: flex;
 	background-color: whitesmoke;
+	min-height: 83%;
 }
 
 body::-webkit-scrollbar {
