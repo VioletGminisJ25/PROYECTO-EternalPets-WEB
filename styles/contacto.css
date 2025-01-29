@@ -2,144 +2,80 @@ main {
   flex-direction: column;
 }
 
-.container {
+.top,.bot{
     display: flex;
     width: 100%;
-}
-
-.left-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 55%;
-    margin: 5%;
-}
-
-.right-column {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    margin: 5%
+    margin-top: 6%;   
 }
 
 .icono {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 6%;
+    margin-top: 6%;
+    width: 50%;
 }
+.info{
+    display: flex;
+    align-items: baseline;
 
-.icono img {
-    width: 50px;
-    height: 50px;
-}
-
-.info p {
-    margin: 0;
-    padding-left: 10px;
-    font-size: 18px;   
+    img{
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .titulo {
-	margin: 3%;
-	color: #8F5D46;
+    margin: 4%;
+    margin-left: 7%;
+    padding-bottom: 5%;
+    color: #8F5D46;
 }
 
-.datos{
-    text-indent: 8px;
+.right,.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%; 
+    h4{
+        margin-top: 4%;
+        margin-bottom: 4%;
+    } 
 }
 
 .fachada {
-   padding-top: 40px;
+   padding-top: 5%;
+   padding-left: 5%;
     max-width: 100%;
     height: auto;
 }
 
-@media (min-width: 601px) and (max-width: 1366px) {
- 
-    .container {
-        flex-direction: column-reverse;   
-    }
-
-    .left-column {
-        width: 100%;
-        padding-right: 10%;
-    }
-    .right-column{
-        flex-direction: column;
-        width: 90%;
-        padding-right: 10%;
-    }
-
-    .fachada {
-        width: 90%;
-        height: auto;
-    }
-
-    .info  {
-        font-size: large;
-        text-align: center;
-        padding-top: 2px;
-    }
-
-    .datos{
-        text-indent: 0px;
-    }
-
-    .icono {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .icono img {
-        width: 60px;
-        height: 60px;
-    }
-   
+@media (min-width: 710px) and (max-width:860px) {
+  .right{
+    width: 60%;
+  }
+  .left{
+    width: 40%;
+  }    
 }
 
-@media (max-width: 600px) {
+@media (max-width: 710px) {
 
-    .container {
-        flex-direction: column-reverse;   
-    }
-
-    .left-column {
-        width: 100%;
-        padding-right: 10%;
-    }
-    .right-column{
+    .top{
         flex-direction: column;
-        width: 80%;
-       
+        align-items: center;
     }
+   .bot{
+    flex-direction: column-reverse;
+   }
+   .left,.right{
+    width: 100%;
+   }
 
     .fachada {
         width: 80%;
         height: auto;
+        padding-bottom: 10%;
     }
-
-    .info p {
-        font-size: medium;
-    }
-
-    .titulo{
-        text-align: center;
-        }
-
-    .datos{
-        text-indent: 0px;
-    }
-
-    .icono {
-        flex-direction: column;
-        align-items: center;
-      
-    }
-
-    .icono img {
-        width: 50px;
-        height: 50px;
-    }
-
 
 }
