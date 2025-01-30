@@ -27,8 +27,7 @@
 
 img {
     width: 45dvw;
-    height: 40dvh;
-    object-fit: cover;
+    height: 45dvh;
 }
 
 @media (max-width: 600px) {
