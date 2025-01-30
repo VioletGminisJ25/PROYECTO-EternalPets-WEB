@@ -173,10 +173,11 @@ img {
 	.imagen {
 		width: 100%;
 		margin-bottom: 3%;
+		padding: 2% 0;
 	}
 
 	img {
-		width: 32dvw;
+		width: 55dvw;
 	}
 
 	.texto {
