@@ -254,27 +254,34 @@ footer {
 }
 
 .insta {
+	transition: all 0.45s ease-in-out;
 	height: 50px;
 	width: 50px;
 	background-image: url(../src/img/redes/instaBla.png);
+	scale: 1.1;
 
 	&:hover {
+		scale: 1.2;
 		background-image: url(../src/img/redes//instaCol.png);
 	}
 }
 
 .twitter {
+	transition: all 0.45s ease-in-out;
 	background-image: url(../src/img/redes/twiterBl.png);
 
 	&:hover {
+		scale:1.2;
 		background-image: url(../src/img/redes/twitterCol.png);
 	}
 }
 
 .facebook {
+	transition: all 0.45s ease-in-out;
 	background-image: url(../src/img/redes/faceBl.png);
 
 	&:hover {
+		scale: 1.2;
 		background-image: url(../src/img/redes/faceCol.png);
 	}
 }
@@ -310,7 +317,5 @@ footer {
 	/* main {
 		height: 72%;
 	} */
-
-	nav {}
 
 }
